@@ -6,6 +6,12 @@
 		color: #545454 !important;
 		padding-bottom: 28px;
 	}
+
+	.choosen{
+		text-align: center;
+		vertical-align: middle;
+		padding: 10px;
+	}
 </style>
 @endsection
 
@@ -18,10 +24,10 @@
             <li class="breadcrumb-item" aria-current="page">Your choice</li>
           </ol>
       </nav>
-	<div class="container">
+	<div class="container choosen">
 		<p>5 top scholarship categories you have picked</p>
 			@foreach($categories as $c)
-				<p class="category">{{$c['value']}}</p>
+				<p class="category choosen">{{$c['value']}}</p>
 			@endforeach
 	</div>
 @endsection
